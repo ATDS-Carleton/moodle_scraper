@@ -58,10 +58,14 @@ Trying to fix problems found on 12/5. No luck yet.
 
 Created the moodle server both locally with `mamp` and on a ubuntu vps. Spend a lot of time fixing a issue with php version. Eventually fixed but have to know how to restore the test site with test data provided by andrew.
 
-#### 12/8
+#### 12/8~12/9
 
 Still fixing the issues spotted on 12/5. Found a working solution but it's in `Ruby`. Might have to learn ruby to fix this…
 
 Trying to learn how to administrate moodle as well, but still have to deal with the backup restoring issue.
 
 > And the key.txt is removed for security.
+
+#### 12/12
+
+Still having trouble with it. Will discuss with Andrew tmw.
