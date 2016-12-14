@@ -69,3 +69,9 @@ Trying to learn how to administrate moodle as well, but still have to deal with 
 #### 12/12
 
 Still having trouble with it. Will discuss with Andrew tmw.
+
+#### 12/13
+
+Rewrite code for better readability and structure. Continue to find a fix for selenium driver issues..
+
+(Try test selenium driver of phantomJS on lower version of phantonJS or try to find chromium driver version 1)
