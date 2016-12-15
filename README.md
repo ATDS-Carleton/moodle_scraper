@@ -75,3 +75,7 @@ Still having trouble with it. Will discuss with Andrew tmw.
 Rewrite code for better readability and structure. Continue to find a fix for selenium driver issues..
 
 (Try test selenium driver of phantomJS on lower version of phantonJS or try to find chromium driver version 1)
+
+#### 12/14
+
+Progressing on using phantomJS on a vps; seems to work sometimes..
