@@ -12,41 +12,6 @@ from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.common.by import By
 import time, sys, os, getopt
 
-def main(argv):
-	chromedriver = "./chromedriver"
-	os.environ["webdriver.chrome.driver"] = chromedriver
-	crawl_url = "https://moodle.carleton.edu/auth/shibboleth/index.php"
-
-	try:
-		opts, args = getopt.getopt(argv, "hd:", ["driver="])
-	except getopt.GetoptError:
-		print "Error: screenShot.py -d <choose driver>"
-		sys.exit(2)
-
-	for opt, arg in opts:
-		if opt == "-h":
-			print "screenShot.py -d <driver_name>"
-			print '''
-Choose from the following:
-s for Safari
-c for Chrome
-p for PhantomJS
-			'''
-			sys.exit()
-		elif opt in ("-d", "--driver"):
-			if arg == "s":
-				browser = webdriver.Safari()
-			elif arg == "c":
-				browser = webdriver.Chrome(chromedriver)
-			elif arg == "p":
-				browser = webdriver.PhantomJS()
-			else:
-				print "invalid driver"
-				sys.exit()
-
-	browser.get(crawl_url)
-	screenshot(browser)
-
 def screenshot(browser):
 
 	wait1 = WebDriverWait(browser, 10)
@@ -81,6 +46,41 @@ def screenshot(browser):
 	browser.save_screenshot('course_3.png')
 
 	browser.quit()
+
+def main(argv):
+	chromedriver = "./chromedriver"
+	os.environ["webdriver.chrome.driver"] = chromedriver
+	crawl_url = "https://moodle.carleton.edu/auth/shibboleth/index.php"
+
+	try:
+		opts, args = getopt.getopt(argv, "hd:", ["driver="])
+	except getopt.GetoptError:
+		print "Error: screenShot.py -d <choose driver>"
+		sys.exit(2)
+
+	for opt, arg in opts:
+		if opt == "-h":
+			print "screenShot.py -d <driver_name>"
+			print '''
+Choose from the following:
+s for Safari
+c for Chrome
+p for PhantomJS
+			'''
+			sys.exit()
+		elif opt in ("-d", "--driver"):
+			if arg == "s":
+				browser = webdriver.Safari()
+			elif arg == "c":
+				browser = webdriver.Chrome(chromedriver)
+			elif arg == "p":
+				browser = webdriver.PhantomJS()
+			else:
+				print "invalid driver"
+				sys.exit()
+
+	browser.get(crawl_url)
+	screenshot(browser)
 
 if __name__ == '__main__':
 	main(sys.argv[1:])
