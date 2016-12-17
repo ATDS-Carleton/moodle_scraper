@@ -83,3 +83,7 @@ Progressing on using phantomJS on a vps; seems to work sometimes..
 #### 12/15
 
 Trying another approach with Java's Spring Boot MVC framework. Have some progress on scraping a test site. But generating screenshot is still a quite hard.
+
+#### 12/16
+
+Learn Ruby.
