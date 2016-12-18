@@ -92,4 +92,4 @@ Learn Ruby.
 
 Reorganize the workflow. Check `scraper_thoughts.md`.
 
-Found an pdf executor inside phatonJS which can parse links perfectly! But somehow the view is mobile view.
+Found an pdf executor inside phatonJS which can parse links perfectly! ~~But somehow the view is mobile view.~~ Setting window size and adjusting pdf output works fine. Only remaining issue is login of phantomJS in OSX `send_key throws errors`. 

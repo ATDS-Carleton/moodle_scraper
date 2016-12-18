@@ -19,26 +19,26 @@
 -    Then it's just a basic crawler model:
 
      ```python
-        Logic:
-           crawl_list = [....]
+           Logic:
+              crawl_list = [....]
 
-        def get_uncrawled():
-            return crawl_list[0] # op crawl_list.pop()?
+           def get_uncrawled():
+               return crawl_list[0] # op crawl_list.pop()?
 
-        def doOps(url):
-            init selenium driver and goes to this url
-            login and wait for the page to load
-            then take screenshot
-            done and returns
-            
-        def main():
-            while True:
-              url = get_uncrawled()
-              if url:
-                  doOps(url)
-              else:
-                  crawling done
-                  sys.exit()
+           def doOps(url):
+               init selenium driver and goes to this url
+               login and wait for the page to load
+               then take screenshot
+               done and returns
+               
+           def main():
+               while True:
+                 url = get_uncrawled()
+                 if url:
+                     doOps(url)
+                 else:
+                     crawling done
+                     sys.exit()
      ```
 
 Issues:
@@ -49,9 +49,8 @@ Issues:
 
 - Safari driver works perfect but have weird unexpected random errors.
 
-- The crawled webpage is unlikely to have those hyperlinks right… (Is it really useful tho?)
+- ~~The crawled webpage is unlikely to have those hyperlinks right… (Is it really useful tho?)~~ Using special executor inside phantomJS seems to work perfectly.
 
-  > Using special executor inside phantomJS seems to work perfectly!!!
 
 ## File Crawling Functions
 
