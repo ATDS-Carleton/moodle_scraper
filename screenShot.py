@@ -10,10 +10,13 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.common.by import By
-import time, sys, os, getopt
+import time, sys, os, getopt, argparse
 
 def screenshot(browser):
-
+	'''
+	This section is dedicated to logining into moodle
+	'''
+	# ==============================================================
 	wait1 = WebDriverWait(browser, 10)
 	wait1.until(EC.presence_of_element_located((By.CSS_SELECTOR, "#username")))
 	# username = browser.find_element_by_xpath(".//*[@id='username']")
@@ -32,6 +35,9 @@ def screenshot(browser):
 	time.sleep(3)
 	# needs to wait for the page fully displayed!
 	browser.save_screenshot('my_homepage.png')
+
+	# This section is try to take a screen shot of every course page
+	# ==============================================================
 
 	course_1 = browser.find_element_by_xpath(".//*[@id='inst97373']/div[2]/ol/li[1]/ol/li[2]/ol/li[1]/a")
 	course_1.click()

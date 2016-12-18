@@ -87,3 +87,9 @@ Trying another approach with Java's Spring Boot MVC framework. Have some progres
 #### 12/16
 
 Learn Ruby.
+
+#### 12/17
+
+Reorganize the workflow. Check `scraper_thoughts.md`.
+
+Found an pdf executor inside phatonJS which can parse links perfectly! But somehow the view is mobile view.
