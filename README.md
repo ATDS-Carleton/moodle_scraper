@@ -93,3 +93,16 @@ Learn Ruby.
 Reorganize the workflow. Check `scraper_thoughts.md`.
 
 Found an pdf executor inside phatonJS which can parse links perfectly! ~~But somehow the view is mobile view.~~ Setting window size and adjusting pdf output works fine. Only remaining issue is login of phantomJS in OSX `send_key throws errors`. 
+
+#### 12/18
+
+Trying to resolve the `send_key` error. Still fails it throws a different error on ubuntu server instead of which I expect to work.
+
+```python
+selenium.common.exceptions.NoSuchElementException: Message: {"errorMessage":"Unable to find element with xpath './/[@id='username']'","request":{"headers":{"Accept":"application/json","Accept-Encoding":"identity","Connection":"close","Content-Length":"104","Content-Type":"application/json;charset=UTF-8","Host":"127.0.0.1:59944","User-Agent":"Python-urllib/2.7"},"httpVersion":"1.1","method":"POST","post":"{\"using\": \"xpath\", \"sessionId\": \"cd1737c0-c5a7-11e6-b842-617fa01ef11c\", \"value\": \".//[@id='username']\"}","url":"/element","urlParsed":{"anchor":"","query":"","file":"element","directory":"/","path":"/element","relative":"/element","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/element","queryKey":{},"chunks":["element"]},"urlOriginal":"/session/cd1737c0-c5a7-11e6-b842-617fa01ef11c/element"}}
+
+Screenshot: available via screen
+```
+
+Which didn't show up locally. Possibly gechodriver issue with ubuntu or some \****.
+
