@@ -106,3 +106,6 @@ Screenshot: available via screen
 
 Which didn't show up locally. Possibly gechodriver issue with ubuntu or some \****.
 
+#### 12/18~12/19
+
+Continue trying to fix. No luck.
