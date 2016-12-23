@@ -109,3 +109,11 @@ Which didn't show up locally. Possibly gechodriver issue with ubuntu or some \**
 #### 12/18~12/19
 
 Continue trying to fix. No luck.
+
+#### 12/21~12/23
+
+After countless attempts to solve the bug related to the `gechodriver` of `phantomJs`. Nothing works. Right now:
+
+- Either wait for the 2.5 release where the bug will be fixed.
+- Try 1.9.8 on `OSX Yosemite`.
+- Continue on the crawler main strategies. (Probably will work on this after Xmas!)
