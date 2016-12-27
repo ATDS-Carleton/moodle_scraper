@@ -117,3 +117,7 @@ After countless attempts to solve the bug related to the `gechodriver` of `phant
 - Either wait for the 2.5 release where the bug will be fixed.
 - Try 1.9.8 on `OSX Yosemite`.
 - Continue on the crawler main strategies. (Probably will work on this after Xmas!)
+
+#### 12/26
+
+Reading documentation and Investigating internal structure of moodle 1.9.8.
