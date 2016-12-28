@@ -118,6 +118,6 @@ After countless attempts to solve the bug related to the `gechodriver` of `phant
 - Try 1.9.8 on `OSX Yosemite`.
 - Continue on the crawler main strategies. (Probably will work on this after Xmas!)
 
-#### 12/26
+#### 12/26 ~ 12/28
 
-Reading documentation and Investigating internal structure of moodle 1.9.8.
+Reading documentation and Investigating internal structure of moodle 1.9.8. Also trying out gechodriver with different languages. But the problem still exists. Probably have to wait for new release of PhantomJS.
