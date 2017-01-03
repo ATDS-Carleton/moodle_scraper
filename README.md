@@ -121,3 +121,7 @@ After countless attempts to solve the bug related to the `gechodriver` of `phant
 #### 12/26 ~ 12/28
 
 Reading documentation and Investigating internal structure of moodle 1.9.8. Also trying out gechodriver with different languages. But the problem still exists. Probably have to wait for new release of PhantomJS.
+
+#### 12/29 ~ 1/2
+
+Finished a demo for crawling course pages.
